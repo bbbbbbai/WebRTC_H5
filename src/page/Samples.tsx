@@ -7,7 +7,8 @@ const data = [
     {title: "相机", path: "/camera"},
     {title: "麦克风", path: "/microphone"},
     {title: "截取视频", path: "/canvas"},
-    {title: "共享屏幕", path: "/screenShare"}
+    {title: "共享屏幕", path: "/screenShare"},
+    {title: "视频滤镜", path: "/videoFilter"}
 ];
 
 export const Samples: FC = () => {

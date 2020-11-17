@@ -50,3 +50,26 @@ h3 {
   color: red;
   font-weight: 400;
 }
+
+
+.rtc-video-filter {
+  &__none {
+    filter: none !important;
+  }
+
+  &__blur {
+    filter: blur(3px) !important;
+  }
+
+  &__grayscale {
+    filter: grayscale(1) !important;
+  }
+
+  &__invert {
+    filter: invert(1) !important;
+  }
+
+  &__sepia {
+    filter: sepia(1) !important;
+  }
+}

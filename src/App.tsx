@@ -13,6 +13,7 @@ import { compose } from 'redux';
 import { Microphone } from './page/Microphone';
 import { Canvas } from './page/Canvas';
 import {ScreenShare} from "./page/ScreenShare";
+import {VideoFilter} from "./page/VideoFilter";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const store = createStore(todoReducer, applyMiddleware(reduxThunk))
@@ -29,6 +30,7 @@ function App() {
               <Route path="/microphone" exact component={Microphone} />
               <Route path="/canvas" exact component={Canvas} />
               <Route path="/screenShare" exact component={ScreenShare} />
+              <Route path="/videoFilter" exact component={VideoFilter} />
           </Switch>
       </HashRouter>
       </Provider>
