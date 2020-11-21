@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# WebRTC 示例
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+项目目录
 
-## Available Scripts
-
-In the project directory, you can run:   dasdasd
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+    h5-samples  
+    ├─debug.log  
+    ├─package.json  
+    ├─README.md  
+    ├─tsconfig.json  
+    ├─yarn.lock  
+    ├─src  
+    |  ├─App.tsx  //路由管理
+    |  ├─index.tsx  
+    |  ├─react-app-env.d.ts  
+    |  ├─reportWebVitals.ts  
+    |  ├─styless  //样式
+    |  |    ├─css  
+    |  |    |  ├─canvas.scss  
+    |  |    |  ├─record.scss  
+    |  |    |  └styless.scss  
+    |  ├─redux  //状态管理
+    |  |   ├─count.ts  
+    |  |   ├─reducers.ts  
+    |  |   ├─action  
+    |  |   |   └action.ts  
+    |  ├─page  
+    |  |  ├─Camera.tsx  //打开摄像头示例
+    |  |  ├─Canvas.tsx  //截取视频示例
+    |  |  ├─Microphone.tsx  //麦克风示例
+    |  |  ├─Resolution.tsx  //视频分辨率示例
+    |  |  ├─Samples.tsx  //入口示例页面
+    |  |  ├─ScreenShare.tsx  //共享屏幕示例
+    |  |  ├─VideoFilter.tsx  //视频滤镜示例
+    |  |  ├─volume  //音量检测
+    |  |  |   ├─AudioVolume.tsx  
+    |  |  |   └soundMeter.js 
+    |  ├─hooks  
+    |  |   └useOpenMedia.ts  //媒体方法
+    |  ├─constants  
+    |  |     ├─index.ts  //公共接口
+    |  |     └windows.ts  //window 全局 接口
+ 
