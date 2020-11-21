@@ -4,7 +4,7 @@ import {Button, message} from "antd";
 
 export const Microphone = () => {
 
-    const openCamera = useOpenMedia("audio", (steam) => {
+    const openAudio = useOpenMedia("audio", (steam) => {
         handleSuccess(steam)
     }, (err) => {
         console.log("err====>",err);
@@ -25,6 +25,6 @@ export const Microphone = () => {
     return <div className="container">
         <h1>打开麦克风</h1>
         <audio id="my-audio" controls autoPlay/>
-        <Button onClick={openCamera}>打开麦克风</Button>
+        <Button onClick={openAudio}>打开麦克风</Button>
     </div>
 }

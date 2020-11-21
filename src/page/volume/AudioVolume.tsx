@@ -1,9 +1,17 @@
 import React, {useEffect, useState} from "react";
 import {message} from "antd";
 import SoundMeter from "./soundMeter.js";
+import {useOpenMedia} from "../../hooks/useOpenMedia";
 export const AudioVolume = () => {
 
     const [audioLevel,setAudioLevel] = useState(0);
+
+    const openAudio = useOpenMedia("audio", (steam) => {
+        handleSuccess(steam)
+    }, (err) => {
+        console.log("err====>",err);
+        message.error("getUserMedia错误：" + err.anme);
+    })
 
     useEffect(()=>{
         try {
@@ -16,15 +24,8 @@ export const AudioVolume = () => {
             message.error("网页音频API不支持。" );
         }
         window.soundMeter = new SoundMeter(window.audioContext);
-        const constraints = window.constraints = {
-            //启用音频
-            audio: true,
-            //禁用视频
-            video: false
-        };
         //根据约束条件获取媒体
-        navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess)
-
+        openAudio();
 
         return ()=>{
             window.soundMeter.stop();
@@ -40,6 +41,8 @@ export const AudioVolume = () => {
         //开始实时读取音量值
         setTimeout(soundMeterProcess, 100);
     }
+
+
 
     //音频音量处理
     const soundMeterProcess = () => {
