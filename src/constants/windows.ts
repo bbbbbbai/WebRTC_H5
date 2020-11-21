@@ -7,6 +7,10 @@ declare global {
             video: boolean
         }
         __REDUX_DEVTOOLS_EXTENSION_COMPOSE__:any
-        steam:any
+        stream:any
+        AudioContext:any
+        webkitAudioContext:any
+        soundMeter:any
+        audioContext:any
     }
 }

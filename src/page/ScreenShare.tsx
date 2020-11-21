@@ -20,7 +20,7 @@ export const ScreenShare: FC = () => {
         const videoTracks = stream.getVideoTracks();
         console.log("videoTracks====>",videoTracks[0]);
         video.srcObject = stream;
-        window.steam = stream
+        window.stream = stream
     }
 
     return <div className="container">
