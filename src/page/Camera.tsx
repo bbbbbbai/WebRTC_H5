@@ -11,14 +11,16 @@ export const Camera = () => {
         message.error("getUserMedia错误：" + err.anme);
     })
 
+
+
     /**
      * 成功返回流
      * @param steam
      */
-    const handleSuccess = (steam: MediaStream) => {
+    const handleSuccess = (stream: MediaStream) => {
         const video = document.querySelector("#my-video") as HTMLVideoElement;
         // const videoTracks = steam.getAudioTracks();
-        video.srcObject = steam;
+        video.srcObject = stream;
     }
 
     return <div className="container">

@@ -31,6 +31,7 @@
     |  |  ├─Samples.tsx  //入口示例页面
     |  |  ├─ScreenShare.tsx  //共享屏幕示例
     |  |  ├─VideoFilter.tsx  //视频滤镜示例
+    |  |  ├─DeviceSelect.tsx  //输入输出设备选择示例
     |  |  ├─volume  //音量检测
     |  |  |   ├─AudioVolume.tsx  
     |  |  |   └soundMeter.js 
