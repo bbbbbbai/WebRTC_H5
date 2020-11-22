@@ -26,8 +26,8 @@ export const DeviceSelect = () => {
     const previewVideo = useRef<any>(null);
 
 
-    const openCamera = useOpenMedia("all", (steam) => {
-        handleSuccess(steam)
+    const openCamera = useOpenMedia("all", (stream) => {
+        handleSuccess(stream)
     }, (err) => {
         message.error("getUserMedia错误：" + err.anme);
     })
@@ -40,7 +40,6 @@ export const DeviceSelect = () => {
     }
 
     useEffect(() => {
-        console.log("12")
         updateDevices().then((data: any) => {
             //判断当前选择的音频输入设备是否为空并且是否有设备
             if (selectedAudioDevice === "" && data.audioDevices.length > 0) {

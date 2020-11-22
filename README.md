@@ -24,6 +24,8 @@
     |  |   ├─action  
     |  |   |   └action.ts  
     |  ├─page  
+    |  |    ├─media-settings  
+    |  |    |  ├─MediaSettings.tsx 添加综合设置
     |  |  ├─Camera.tsx  //打开摄像头示例
     |  |  ├─Canvas.tsx  //截取视频示例
     |  |  ├─Microphone.tsx  //麦克风示例

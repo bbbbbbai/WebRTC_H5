@@ -6,8 +6,8 @@ export const AudioVolume = () => {
 
     const [audioLevel,setAudioLevel] = useState(0);
 
-    const openAudio = useOpenMedia("audio", (steam) => {
-        handleSuccess(steam)
+    const openAudio = useOpenMedia("audio", (stream) => {
+        handleSuccess(stream)
     }, (err) => {
         console.log("err====>",err);
         message.error("getUserMedia错误：" + err.anme);

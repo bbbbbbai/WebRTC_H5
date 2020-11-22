@@ -11,7 +11,8 @@ const data = [
     {title: "视频滤镜", path: "/videoFilter"},
     {title: "视频分辨率设置", path: "/resolution"},
     {title: "音量检测", path: "/audioVolume"},
-    {title: "输入输出设备选择", path: "/deviceSelect"}
+    {title: "输入输出设备选择", path: "/deviceSelect"},
+    {title: "设置综合", path: "/mediaSettings"}
 ];
 
 export const Samples: FC = () => {
