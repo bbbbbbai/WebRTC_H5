@@ -1,7 +1,6 @@
 import React, {useRef} from "react";
-
- // const oceans = require("../static/mp4/oceans.mp4")
-
+// @ts-ignore
+import oceans from  "../asset/mp4/oceans.mp4";
 //捕获Video作为媒体流示例
 export const CaptureVideo = () => {
 
@@ -9,8 +8,6 @@ export const CaptureVideo = () => {
     const playerVideo = useRef<any>(null);
 
     const canPlay = () => {
-
-        console.log(121)
         //源视频对象
         const _sourceVideo = sourceVideo.current;
         //播放视频对象
@@ -35,7 +32,7 @@ export const CaptureVideo = () => {
     return <div className="container">
         <h1>捕获Video作为媒体流示例</h1>
         <video ref={sourceVideo} className="video" id="my-video" onCanPlay={canPlay} playsInline controls loop muted>
-            <source src="../asset/mp4/oceans.mp4" type="video/mp4"/>
+            <source src={oceans} type="video/mp4"/>
         </video>
         <video className="video" ref={playerVideo} playsInline autoPlay />
     </div>
