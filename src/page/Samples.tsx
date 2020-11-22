@@ -12,7 +12,9 @@ const data = [
     {title: "视频分辨率设置", path: "/resolution"},
     {title: "音量检测", path: "/audioVolume"},
     {title: "输入输出设备选择", path: "/deviceSelect"},
-    {title: "设置综合", path: "/mediaSettings"}
+    {title: "设置综合", path: "/mediaSettings"},
+    {title: "mediaStreamAPI测试", path: "/mediaStreamAPI"},
+    {title: "捕获Video作为媒体流", path: "/captureVideo"}
 ];
 
 export const Samples: FC = () => {

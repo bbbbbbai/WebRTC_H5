@@ -18,6 +18,8 @@ import {Resolution} from "./page/Resolution";
 import {AudioVolume} from "./page/volume/AudioVolume";
 import {DeviceSelect} from "./page/DeviceSelect";
 import {MediaSettings} from "./page/media-settings/MediaSettings";
+import {MediaStreamAPI} from "./page/MediaStreamAPI";
+import {CaptureVideo} from "./page/CaptureVideo";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const store = createStore(todoReducer, applyMiddleware(reduxThunk))
@@ -39,6 +41,8 @@ function App() {
               <Route path="/audioVolume" exact component={AudioVolume} />
               <Route path="/deviceSelect" exact component={DeviceSelect} />
               <Route path="/mediaSettings" exact component={MediaSettings} />
+              <Route path="/mediaStreamAPI" exact component={MediaStreamAPI} />
+              <Route path="/captureVideo" exact component={CaptureVideo} />
           </Switch>
       </HashRouter>
       </Provider>

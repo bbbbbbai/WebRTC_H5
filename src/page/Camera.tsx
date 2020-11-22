@@ -20,6 +20,7 @@ export const Camera = () => {
     const handleSuccess = (stream: MediaStream) => {
         const video = document.querySelector("#my-video") as HTMLVideoElement;
         // const videoTracks = steam.getAudioTracks();
+        window.stream = stream;
         video.srcObject = stream;
     }
 

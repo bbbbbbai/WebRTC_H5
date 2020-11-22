@@ -1,5 +1,6 @@
 /**
  * 打开摄像头
+ * @param constraint
  * @param callback 成功回调
  * @param fail 错误回调
  */
