@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 // @ts-ignore
-import oceans from  "../asset/mp4/oceans.mp4";
+import oceans from "../asset/mp4/oceans.mp4";
 //捕获Video作为媒体流示例
 export const CaptureVideo = () => {
 
@@ -17,9 +17,9 @@ export const CaptureVideo = () => {
 
         //捕获帧率
         const fps = 0;
-        if(_sourceVideo.captureStream){
+        if (_sourceVideo.captureStream) {
             stream = _sourceVideo.captureStream(fps);
-        }else if (_sourceVideo.mozCaptureStream) {
+        } else if (_sourceVideo.mozCaptureStream) {
             stream = _sourceVideo.mozCaptureStream(fps);
         } else {
             console.error('captureStream不支持');
@@ -34,6 +34,6 @@ export const CaptureVideo = () => {
         <video ref={sourceVideo} className="video" id="my-video" onCanPlay={canPlay} playsInline controls loop muted>
             <source src={oceans} type="video/mp4"/>
         </video>
-        <video className="video" ref={playerVideo} playsInline autoPlay />
+        <video className="video" ref={playerVideo} playsInline autoPlay/>
     </div>
 }

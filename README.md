@@ -28,6 +28,7 @@
     |  |    |  ├─MediaSettings.tsx 添加综合设置
     |  |  ├─Camera.tsx  //打开摄像头示例
     |  |  ├─CaptureVideo.tsx  //捕获Video作为媒体流示例
+    |  |  ├─CaptureCanvas.tsx  //捕获Canvas作为媒体流示例
     |  |  ├─Canvas.tsx  //截取视频示例
     |  |  ├─Microphone.tsx  //麦克风示例
     |  |  ├─Resolution.tsx  //视频分辨率示例
