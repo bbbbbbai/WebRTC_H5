@@ -21,6 +21,7 @@ import {MediaSettings} from "./page/media-settings/MediaSettings";
 import {MediaStreamAPI} from "./page/MediaStreamAPI";
 import {CaptureVideo} from "./page/CaptureVideo";
 import {CaptureCanvas} from "./page/CaptureCanvas";
+import {RecordAudio} from "./page/RecordAudio";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const store = createStore(todoReducer, applyMiddleware(reduxThunk))
@@ -46,6 +47,7 @@ function App() {
                     <Route path="/mediaStreamAPI" exact component={MediaStreamAPI}/>
                     <Route path="/captureVideo" exact component={CaptureVideo}/>
                     <Route path="/captureCanvas" exact component={CaptureCanvas}/>
+                    <Route path="/recordAudio" exact component={RecordAudio}/>
                 </Switch>
             </HashRouter>
         </Provider>

@@ -4,8 +4,8 @@ import {Button, message} from "antd";
 
 export const Microphone = () => {
 
-    const openAudio = useOpenMedia("audio", (steam) => {
-        handleSuccess(steam)
+    const openAudio = useOpenMedia("audio", (stream) => {
+        handleSuccess(stream)
     }, (err) => {
         console.log("err====>",err);
         message.error("getUserMedia错误：" + err.anme);
@@ -15,11 +15,11 @@ export const Microphone = () => {
      * 成功返回流
      * @param steam
      */
-    const handleSuccess = (steam: MediaStream) => {
+    const handleSuccess = (stream: MediaStream) => {
         const audio = document.querySelector("#my-audio") as HTMLAudioElement;
-        console.log("steam===>",steam);
+        console.log("steam===>",stream);
         // const videoTracks = steam.getAudioTracks();
-        audio.srcObject = steam;
+        audio.srcObject = stream;
     }
 
     return <div className="container">

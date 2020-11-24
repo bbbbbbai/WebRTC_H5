@@ -15,7 +15,8 @@ const data = [
     {title: "设置综合", path: "/mediaSettings"},
     {title: "mediaStreamAPI测试", path: "/mediaStreamAPI"},
     {title: "捕获Video作为媒体流", path: "/captureVideo"},
-    {title: "捕获Canvas作为媒体流示例", path: "/captureCanvas"}
+    {title: "捕获Canvas作为媒体流示例", path: "/captureCanvas"},
+    {title: "录制音频示例", path: "/recordAudio"}
 ];
 
 export const Samples: FC = () => {
