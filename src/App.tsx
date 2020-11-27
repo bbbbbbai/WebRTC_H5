@@ -23,6 +23,7 @@ import {CaptureVideo} from "./page/CaptureVideo";
 import {CaptureCanvas} from "./page/CaptureCanvas";
 import {RecordAudio} from "./page/RecordAudio";
 import {RecordVideo} from "./page/RecordVideo";
+import {RecordScreen} from "./page/RecordScreen";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const store = createStore(todoReducer, applyMiddleware(reduxThunk))
@@ -50,6 +51,7 @@ function App() {
                     <Route path="/captureCanvas" exact component={CaptureCanvas}/>
                     <Route path="/recordAudio" exact component={RecordAudio}/>
                     <Route path="/recordVideo" exact component={RecordVideo}/>
+                    <Route path="/recordScreen" exact component={RecordScreen}/>
                 </Switch>
             </HashRouter>
         </Provider>

@@ -32,6 +32,7 @@
     |  |  ├─Canvas.tsx  //截取视频示例
     |  |  ├─RecordAudio.tsx  //录制音频示例
     |  |  ├─RecordVideo.tsx  //录制视频示例
+    |  |  ├─RecordScreen.tsx  //录制屏幕示例
     |  |  ├─Microphone.tsx  //麦克风示例
     |  |  ├─Resolution.tsx  //视频分辨率示例
     |  |  ├─Samples.tsx  //入口示例页面
