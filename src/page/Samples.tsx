@@ -18,7 +18,8 @@ const data = [
     {title: "捕获Canvas作为媒体流示例", path: "/captureCanvas"},
     {title: "录制音频", path: "/recordAudio"},
     {title: "录制视频", path: "/RecordVideo"},
-    {title: "录制屏幕", path: "/RecordScreen"}
+    {title: "录制屏幕", path: "/RecordScreen"},
+    {title: "录制Canvas", path: "/RecordCanvas"}
 ];
 
 export const Samples: FC = () => {
