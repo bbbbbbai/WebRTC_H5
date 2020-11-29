@@ -20,7 +20,8 @@ const data = [
     {title: "录制视频", path: "/RecordVideo"},
     {title: "录制屏幕", path: "/RecordScreen"},
     {title: "录制Canvas", path: "/RecordCanvas"},
-    {title: "连接建立", path: "/PeerConnection"}
+    {title: "连接建立", path: "/PeerConnection"},
+    {title: "连接建立视频", path: "/peerConnectionVideo"},
 ];
 
 export const Samples: FC = () => {

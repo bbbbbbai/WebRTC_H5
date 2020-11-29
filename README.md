@@ -35,6 +35,7 @@
     |  |  ├─RecordScreen.tsx  //录制屏幕示例
     |  |  ├─RecordCanvas.tsx  //录制Canvas
     |  |  ├─PeerConnection.tsx  //连接建立示例
+    |  |  ├─PeerConnectionVideo.tsx  //连接建立视频示例
     |  |  ├─Microphone.tsx  //麦克风示例
     |  |  ├─Resolution.tsx  //视频分辨率示例
     |  |  ├─Samples.tsx  //入口示例页面

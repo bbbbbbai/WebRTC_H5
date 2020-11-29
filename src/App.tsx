@@ -26,6 +26,7 @@ import {RecordVideo} from "./page/RecordVideo";
 import {RecordScreen} from "./page/RecordScreen";
 import {RecordCanvas} from "./page/RecordCanvas";
 import {PeerConnection} from "./page/PeerConnection";
+import {PeerConnectionVideo} from "./page/PeerConnectionVideo";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const store = createStore(todoReducer, applyMiddleware(reduxThunk))
@@ -56,6 +57,7 @@ function App() {
                     <Route path="/recordScreen" exact component={RecordScreen}/>
                     <Route path="/recordCanvas" exact component={RecordCanvas}/>
                     <Route path="/peerConnection" exact component={PeerConnection}/>
+                    <Route path="/peerConnectionVideo" exact component={PeerConnectionVideo}/>
                 </Switch>
             </HashRouter>
         </Provider>

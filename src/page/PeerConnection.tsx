@@ -55,7 +55,7 @@ export const PeerConnection = () => {
         }
 
         //设置ICE Server，使用Google服务器
-        let configuration = {"iceServers": [{"url": "stun:stun.l.google.com:19302"}]};
+        let configuration = {"iceServers": [{"urls": "stun:stun.l.google.com:19302"}]};
 
         //创建RTCPeerConnection对象
         // @ts-ignore
@@ -175,7 +175,7 @@ export const PeerConnection = () => {
         try {
             if (event.candidate) {
                 //将peerConnA的Candidate添加至peerConnB
-                await peerConnB.addIceCandidate(event.candidate);
+                await peerConnA.addIceCandidate(event.candidate);
                 onAddIceCandidateSuccess(peerConnA);
             }
         } catch (e) {
@@ -189,7 +189,7 @@ export const PeerConnection = () => {
         if (remoteVideoRef.current.srcObject !== e.streams[0]) {
             //取集合第一个元素
             remoteVideoRef.current.srcObject = e.streams[0];
-            console.log('peerConnB开始接收远端流');
+            console.log('peerConnB开始接收远端流',e);
         }
     }
 
